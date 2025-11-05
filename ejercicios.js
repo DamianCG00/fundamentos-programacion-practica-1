@@ -30,6 +30,7 @@ function miInformacion() {
  */
 function operacionesBasicas(a, b) {
   // TODO: Calcula suma, resta, multiplicaciÃ³n y divisiÃ³n de a y b
+  //test
   
   const suma = a + b;
   const resta = a - b;
