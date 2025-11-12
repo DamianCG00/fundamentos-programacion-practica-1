@@ -150,7 +150,12 @@ function clasificarEdad(edad) {
  */
 function factorial(n) {
   // TODO: Implementa usando un bucle for
-  return 1;
+  let resultado = 1; // se suele usar "let" para resultados que cambian, en este caso el resultado se actualiza en cada paso, cada que se repite
+
+  for (let i = 1; i <= n; i++){
+    resultado = resultado * i;
+  }
+  return resultado;
 }
 
 /**
