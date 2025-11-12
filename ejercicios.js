@@ -310,8 +310,18 @@ function invertirArray(arr) {
  */
 function crearMatriz(filas, columnas) {
   // TODO: Crea una matriz de filas x columnas llena de ceros
-  const matriz = [];
+const matriz = [];
+
+  for (let f = 0; f < filas; f++) {
+    const fila = [];
+    for (let c = 0; c < columnas; c++) {
+      fila.push(0);
+    }
+    matriz.push(fila);
+  }
+
   return matriz;
+  
 }
 
 /**
