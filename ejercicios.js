@@ -366,6 +366,13 @@ function obtenerFila(matriz, indiceFila) {
 function obtenerColumna(matriz, indiceColumna) {
   // TODO: Extrae todos los elementos de la columna indicada
   const columna = [];
+  for (let i = 0; i < matriz.length; i++){
+    //La matriz [i] quiere decir que es dode esta actualmente
+    // la matriz[i] [indicecolumumna] es lo que hay en esa columna
+    if (matriz[i][indiceColumna] !== undefined) { // el !== quiere decir que es igual diferente al no definido, que esto pasa cuand  se "Imprime un valor no definido antes"
+      columna.push(matriz[i][indiceColumna]);
+    }
+  }
   return columna;
 }
 
