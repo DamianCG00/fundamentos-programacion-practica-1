@@ -199,7 +199,7 @@ function tablaMultiplicar(numero) {
 function numerosPares(n) {
   // TODO: Crea un array con todos los nÃºmeros pares hasta n
   const pares = [];
-  for (let i = 2; i <= n; i += 2){
+  for (let i = 2; i <= n; i += 2){ //suponiendo que siempre serán pares los numeros
     pares.push(i);
   }
   return pares;
@@ -216,7 +216,12 @@ function numerosPares(n) {
  */
 function sumaArray(numeros) {
   // TODO: Suma todos los elementos del array
-  return 0;
+  let suma = 0;
+  for (let i = 0; i < numeros.length; i++){
+    suma += numeros[i];
+
+  }
+  return suma;
 }
 
 /**
