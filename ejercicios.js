@@ -182,6 +182,11 @@ function sumaHastaN(n) {
 function tablaMultiplicar(numero) {
   // TODO: Genera un array con la tabla de multiplicar
   const tabla = [];
+
+  for (let i = 1; i <= 10; i++){ 
+    const resultado = numero * i;
+    tabla.push(resultado); // entendí que esto hace que se vaya agregando progresivament los numeros del a secuencia del 3, 6, 9, etc.
+  }
   return tabla;
 }
 
