@@ -333,7 +333,15 @@ const matriz = [];
 function sumaMatriz(matriz) {
   // TODO: Suma todos los elementos de la matriz
   // NecesitarÃ¡s dos bucles: uno para las filas y otro para las columnas
-  return 0;
+  let suma = 0;
+
+  for (let f = 0; f < matriz.length; f++) {
+    for (let c = 0; c < matriz[f].length; c++) {
+      suma += matriz[f][c];
+    }
+  }
+
+  return suma;
 }
 
 /**
