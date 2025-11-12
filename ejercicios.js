@@ -61,7 +61,7 @@ function areaRectangulo(base, altura) {
  */
 function celsiusAFahrenheit(celsius) {
   // TODO: Implementa la conversiÃ³n
-  
+  //const fahrenheit 
   return celsius * 9/5 + 32;
 }
 
@@ -77,7 +77,12 @@ function celsiusAFahrenheit(celsius) {
 function parOImpar(numero) {
   // TODO: Usa el operador % (mÃ³dulo) para determinar si es par o impar
   // Pista: Un nÃºmero es par si numero % 2 === 0
-  return "";
+  if (numero % 2 == 0){ //declara que sí el numero es divisible entre 2
+    return "par";
+  } else {
+    return "impar";
+  }
+  
 }
 
 /**
