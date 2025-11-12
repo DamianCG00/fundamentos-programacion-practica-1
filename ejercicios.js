@@ -256,7 +256,7 @@ function encontrarMaximo(numeros) {
   }
 ///////// siguiendo la pista, es posible hacerlo de fora más corta con el "math.max" de la sig forma
   return Math.max(... numeros); // los puntos "..." se refueren a que su fueran los numeros o el num maximo, es basicamente como llamar a los numeros = Math.max(5, 10, 2)
-  
+
   
 }
 
@@ -270,6 +270,12 @@ function encontrarMaximo(numeros) {
 function filtrarMayores(numeros, limite) {
   // TODO: Crea un nuevo array con solo los nÃºmeros mayores al lÃ­mite
   const mayores = [];
+
+  for (const numero of numeros) {
+    if (numero > limite) {
+      mayores.push(numero);
+    }
+  }
   return mayores;
 }
 
